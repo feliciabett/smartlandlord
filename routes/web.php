@@ -11,12 +11,22 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () { // the slash means homePage
     return view('login');
 });
 
-Route::get('/welcome',function(){
+/*Route::get('/welcome',function(){
 	return view('welcome');
+}); */
+
+Route::get('/home',function(){
+	return view('home');
+});
+Route::get('profits',function(){
+	return view('profits');
+});
+Route::get('buidings',function(){
+	return view('buidings');
 });
 
 
