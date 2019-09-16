@@ -28,5 +28,6 @@ Route::get('profits',function(){
 Route::get('buidings',function(){
 	return view('buidings');
 });
-
-
+Route::get('/main',function(){
+	return view('login');
+});
